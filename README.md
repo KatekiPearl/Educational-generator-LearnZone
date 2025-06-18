@@ -43,7 +43,7 @@ A web application that generates customized educational materials such as lesson
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/educational-content-generator.git
+   git clone https://github.com/KatekiPearl/Educational-generator-LearnZone.git
    cd educational-content-generator
    ```
 
@@ -62,7 +62,7 @@ A web application that generates customized educational materials such as lesson
 4. Start the server:
 
    ```bash
-   npm start
+   node server.js
    ```
 
 5. Open `index.html` in your browser (or navigate to `http://localhost:3000` if your server serves static files).
@@ -120,6 +120,6 @@ This project is licensed under the MIT License.
 
 ## Contact
 
-Created by [Your Name] — [your.email@example.com]
+Created by [Katekani Dlomu] — katekanidlomu@gmail.com]
 
 Feel free to reach out for any questions or feedback!
