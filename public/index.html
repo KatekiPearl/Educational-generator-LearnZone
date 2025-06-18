@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Content Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Educational Content Generator</h1>
+    <form id="contentForm">
+      <div class="form-group">
+        <label for="level">Grade/Level:</label>
+        <input type="text" id="level" required minlength="2" maxlength="20">
+      </div>
+
+      <div class="form-group">
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" required minlength="2" maxlength="30">
+      </div>
+
+      <div class="form-group">
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" required minlength="3" maxlength="50">
+      </div>
+
+      <div class="form-group">
+        <label for="template">Content Type:</label>
+        <select id="template" required>
+          <option value="">-- Select Content Type --</option>
+          <option value="lesson">Lesson Plan</option>
+          <option value="study">Study Guide</option>
+          <option value="blooms">Bloom's Enrichment</option>
+          <option value="exam">Exam Revision Sheet</option>
+          <option value="diff">Differentiated Instruction</option>
+        </select>
+      </div>
+
+      <button type="submit" id="submitBtn">
+        <span class="button-text">Generate</span>
+        <span class="spinner hidden"></span>
+      </button>
+    </form>
+
+    <div id="results" class="hidden">
+      <h2>Generated Output</h2>
+      <div class="output-container">
+        <pre id="output"></pre>
+        <div class="action-buttons">
+          <button id="copyBtn" class="secondary">Copy</button>
+          <button id="downloadBtn" class="secondary">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="performance" class="performance-metrics"></div>
+    <div id="error" class="error-message"></div>
+  </div>
+</body>
+</html>
